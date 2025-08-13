@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Mood Tracker</h1>
+
+    <form id="mood-form">
+      <label for="mood">Select your mood:</label>
+      <select id="mood" required>
+        <option value="">--Choose--</option>
+        <option value="😊 Happy">😊 Happy</option>
+
+        <option value="😞 Sad">😞 Sad</option>
+        <option value="😠 Angry">😠 Angry</option>
+        <option value="😐 Neutral">😐 Neutral</option>
+        <option value="😌 Relaxed">😌 Relaxed</option>
+      </select>
+
+      <label for="note">Add a note (optional):</label>
+      <textarea id="note" rows="3" placeholder="Write something..."></textarea>
+
+      <button type="submit">Save Mood</button>
+    </form>
+
+    <h2>My Mood History</h2>
+    <ul id="mood-history"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
